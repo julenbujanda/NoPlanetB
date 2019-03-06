@@ -1,26 +1,47 @@
 package com.julenbujanda.noplanetb;
 
-import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import android.test.ActivityInstrumentationTestCase2;
+import android.test.TouchUtils;
+import android.widget.Button;
+import android.widget.EditText;
 
-import static org.junit.Assert.*;
+
 
 /**
- * Instrumented test, which will execute on an Android device.
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ * @author ernesto
  */
-@RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTest {
-    @Test
-    public void useAppContext() {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.julenbujanda.noplanetb", appContext.getPackageName());
+public class ExampleInstrumentedTest extends ActivityInstrumentationTestCase2<BLogin> {
+
+    private Button mloginbutton;
+    private EditText etext1;
+    private EditText etext2;
+
+    public ExampleInstrumentedTest() {
+        super(BLogin.class);
     }
+
+    protected void setUp() throws Exception {
+        super.setUp();
+        BLogin actividad = getActivity();
+        etext1 = actividad.findViewById(R.id.txt_username);
+        etext2 = actividad.findViewById(R.id.txt_password);
+        mloginbutton = actividad.findViewById(R.id.btn_login);
+
+    }
+    private static final String USERNAME = "julenbujanda@me.com";
+    private static final String PASSWORD = "contrasena";
+
+    public void testLoginSignup() {
+        TouchUtils.tapView(this, etext1);
+        getInstrumentation().sendStringSync(USERNAME);
+//        // now on value2 entry
+        TouchUtils.tapView(this, etext2);
+        getInstrumentation().sendStringSync(PASSWORD);
+        // now on Add button
+        TouchUtils.tapView(this, mloginbutton);
+    }
+
+
 }
