@@ -5,4 +5,6 @@
     <string name="too_late">Too late for leaving...</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="favourite">Favourite</string>
+    <string name="side_menu">Side menu</string>
 </resources>
