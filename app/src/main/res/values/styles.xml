@@ -10,7 +10,7 @@
 
     <style name="TitleTheme" parent="@android:style/Widget.TextView">
         <item name="android:textColor">@color/titleColor</item>
-        <item name="android:textSize">35sp</item>
+        <item name="android:textSize">50sp</item>
         <item name="android:fontFamily">@font/bromello</item>
     </style>
 
