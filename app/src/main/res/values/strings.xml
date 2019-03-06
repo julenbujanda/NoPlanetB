@@ -3,4 +3,6 @@
     <string name="app_icon">App icon</string>
     <string name="no_planet_b">No Planet B</string>
     <string name="too_late">Too late for leaving...</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
 </resources>

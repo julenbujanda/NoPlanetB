@@ -1,7 +1,9 @@
 package com.julenbujanda.noplanetb;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -32,9 +34,9 @@ public class BSplash extends AppCompatActivity {
         txtSubtitle = findViewById(R.id.txt_splash_subtitle);
         loadImages();
         mostrarAnimaciones();
-/*        new Handler().postDelayed(() -> {
-
-        }, 3000);*/
+        new Handler().postDelayed(() -> {
+            startActivity(new Intent(BSplash.this, BLogin.class));
+        }, 3000);
     }
 
     private void loadImages() {
