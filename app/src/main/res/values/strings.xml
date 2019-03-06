@@ -12,4 +12,6 @@
     <string name="refreshed">Refreshed</string>
     <string name="leave">Leave</string>
     <string name="stay">Stay</string>
+    <string name="join_us">Join us</string>
+    <string name="login">Login</string>
 </resources>

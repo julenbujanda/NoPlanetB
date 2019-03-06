@@ -4,32 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/planetearth"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".BLogin">
+    tools:context=".BLogin"
+    android:padding="25dp">
 
     <TextView
-        android:theme="@style/TitleTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Join us"/>
+        android:layout_marginBottom="15dp"
+        android:text="@string/join_us"
+        android:theme="@style/TitleTheme" />
 
-    <android.support.design.widget.TextInputEditText
-        android:id="@+id/txt_username"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/username" />
+        android:orientation="vertical"
+        android:background="@drawable/corner_background"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp">
 
-    <android.support.design.widget.TextInputEditText
-        android:id="@+id/txt_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:hint="@string/password"/>
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
 
     <android.support.design.button.MaterialButton
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hey"/>
+        android:text="@string/login" />
 
 </LinearLayout>
