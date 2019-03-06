@@ -14,4 +14,9 @@
         <item name="android:fontFamily">@font/bromello</item>
     </style>
 
+    <style name="SubtitleTheme" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>
