@@ -23,4 +23,9 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <style name="WhiteButton" parent="@android:style/Widget.Button">
+        <item name="android:backgroundTint">#FFF</item>
+
+    </style>
+
 </resources>
