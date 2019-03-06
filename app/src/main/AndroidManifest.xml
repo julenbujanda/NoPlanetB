@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/NoPlanetTheme">
         <activity android:name=".BLogin"></activity>
-        <activity android:name=".BSplash">
+        <activity
+            android:name=".BSplash"
+            android:theme="@style/NoPlanetThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
