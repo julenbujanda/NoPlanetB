@@ -16,7 +16,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
 
-public class SplashScreenActivity extends AppCompatActivity {
+public class BSplash extends AppCompatActivity {
 
     private LinearLayout linearLayout;
     private ImageView ivIcon;
